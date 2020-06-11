@@ -147,6 +147,11 @@
         visibility: visible;
         z-index: 9999;
       }
+      @media (prefers-reduced-motion) {
+        #flying-focus-ring-element {
+          display: none;
+        }
+      }
     `;
 
     const styleSheet = document.createElement("style");

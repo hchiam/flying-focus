@@ -6,8 +6,8 @@
 
 ```html
 <script
-  src="https://cdn.jsdelivr.net/gh/hchiam/flying-focus@master/flying-focus.js"
-  integrity="sha384-SOrM229gWopNmq76F2faaHwMRT7swy+ai4pYHSkZiHOXc8t9FbD+vk8iKC/Ig4L7"
+  src="https://cdn.jsdelivr.net/gh/hchiam/flying-focus@1.1.0/flying-focus.js"
+  integrity="sha384-FEFayKTstGYGkfMh2hg39s77IeoLBM19BYMBaD8bOoZ2+yZHTfLWHgILLTKCCKVc"
   crossorigin="anonymous"
 ></script>
 ```
