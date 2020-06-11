@@ -23,3 +23,5 @@ cat flying-focus.js | openssl dgst -sha384 -binary | openssl base64 -A
 <https://github.com/NV/flying-focus>
 
 <https://github.com/hchiam/flying-focus_0>
+
+You can see flying focus ring being used on the web accessibility web site <https://webaim.org>
