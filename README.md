@@ -8,8 +8,8 @@
 
 ```html
 <script
-  src="https://cdn.jsdelivr.net/gh/hchiam/flying-focus@1.1.0/flying-focus.js"
-  integrity="sha384-FEFayKTstGYGkfMh2hg39s77IeoLBM19BYMBaD8bOoZ2+yZHTfLWHgILLTKCCKVc"
+  src="https://cdn.jsdelivr.net/gh/hchiam/flying-focus@1.2.0/flying-focus.js"
+  integrity="sha384-A1z+OV4iRAd4L4P7Um39Oqw9B53GNGAlOBrRe5NRHYwW6eQQAJAN3QIaJOCl1BP1"
   crossorigin="anonymous"
 ></script>
 ```

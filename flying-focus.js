@@ -26,21 +26,21 @@
  */
 
 (function setUpFlyingFocusRing() {
-  const DURATION_IN_MS = 400;
+  var DURATION_IN_MS = 400;
 
-  let flyingRingElement = null;
-  let timer = null;
-  let previouslyFocusedElement = null;
-  let keyDownTime = 0;
+  var flyingRingElement = null;
+  var timer = null;
+  var previouslyFocusedElement = null;
+  var keyDownTime = 0;
 
   addStyleSheet();
 
   document.documentElement.addEventListener(
     "keydown",
     function setKeyDownTime(event) {
-      const code = event.which || event.keyCode;
-      const hitTab = code === 9;
-      const hitArrowKeys = code > 36 && code < 41;
+      var code = event.which || event.keyCode;
+      var hitTab = code === 9;
+      var hitArrowKeys = code > 36 && code < 41;
       if (hitTab || hitArrowKeys) {
         keyDownTime = Date.now();
       }
@@ -51,16 +51,16 @@
   document.documentElement.addEventListener(
     "focus",
     function moveFocusRing(event) {
-      const target = event.target;
+      var target = event.target;
       if (target.id === "flying-focus-ring-element") return;
 
-      let isFirstFocus = false;
+      var isFirstFocus = false;
       if (!flyingRingElement) {
         isFirstFocus = true;
         initialize();
       }
 
-      const offset = offsetOf(target);
+      var offset = offsetOf(target);
       flyingRingElement.style.left = offset.left + "px";
       flyingRingElement.style.top = offset.top + "px";
       flyingRingElement.style.width = target.offsetWidth + "px";
@@ -103,26 +103,26 @@
   }
 
   function wasRecentlyPressed() {
-    const millisecondsToCountAsRecent = 42;
+    var millisecondsToCountAsRecent = 42;
     return Date.now() - keyDownTime < millisecondsToCountAsRecent;
   }
 
   function offsetOf(elem) {
-    const rect = elem.getBoundingClientRect();
-    const clientLeft =
+    var rect = elem.getBoundingClientRect();
+    var clientLeft =
       document.documentElement.clientLeft || document.body.clientLeft;
-    const clientTop =
+    var clientTop =
       document.documentElement.clientTop || document.body.clientTop;
-    const scrollLeft =
+    var scrollLeft =
       window.pageXOffset ||
       document.documentElement.scrollLeft ||
       document.body.scrollLeft;
-    const scrollTop =
+    var scrollTop =
       window.pageYOffset ||
       document.documentElement.scrollTop ||
       document.body.scrollTop;
-    const left = rect.left + scrollLeft - clientLeft;
-    const top = rect.top + scrollTop - clientTop;
+    var left = rect.left + scrollLeft - clientLeft;
+    var top = rect.top + scrollTop - clientTop;
     return {
       top: top || 0,
       left: left || 0,
@@ -130,7 +130,7 @@
   }
 
   function addStyleSheet() {
-    const styles = `
+    var styles = `
       #flying-focus-ring-element {
         position: absolute;
         background: transparent;
@@ -154,7 +154,7 @@
       }
     `;
 
-    const styleSheet = document.createElement("style");
+    var styleSheet = document.createElement("style");
     styleSheet.type = "text/css";
     styleSheet.className = "flying-focus-ring-style-sheet";
     styleSheet.innerText = styles;
