@@ -15,7 +15,7 @@
 ```
 
 ```bash
-echo sha384-$(cat flying-focus.js | openssl dgst -sha384 -binary | openssl base64 -A)
+bash get-integrity.sh
 ```
 
 ## Inspiration for this
