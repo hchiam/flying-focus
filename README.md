@@ -1,6 +1,6 @@
 # flying focus ring
 
-![version](https://img.shields.io/github/release/hchiam/flying-focus) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![HitCount](http://hits.dwyl.com/hchiam/flying-focus.svg)](http://hits.dwyl.com/hchiam/flying-focus)
+![version](https://img.shields.io/github/release/hchiam/flying-focus) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/hchiam/flying-focus/blob/master/MIT-LICENSE.txt) [![HitCount](http://hits.dwyl.com/hchiam/flying-focus.svg)](http://hits.dwyl.com/hchiam/flying-focus)
 
 [Live demo](https://codepen.io/hchiam/pen/MWKKxdW)
 
