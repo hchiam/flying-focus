@@ -8,7 +8,7 @@
 
 ```html
 <script
-  src="https://cdn.jsdelivr.net/gh/hchiam/flying-focus@1.2.1/flying-focus.js"
+  src="https://cdn.jsdelivr.net/gh/hchiam/flying-focus@1.3.0/flying-focus.js"
   integrity="sha384-R/GTkKePjxM+7NiHK3HnRFNqvOoCND50qZZgnhKN8NsT3cRIIrTRw1EdS61VgW3W"
   crossorigin="anonymous"
 ></script>
