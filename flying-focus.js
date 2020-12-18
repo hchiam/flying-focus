@@ -147,6 +147,9 @@
         visibility: visible;
         z-index: 9999;
       }
+      #flying-focus-ring-element:not(.flying-focus_visible) {
+        height: 0 !important;
+      }
       @media (prefers-reduced-motion) {
         #flying-focus-ring-element {
           display: none;
